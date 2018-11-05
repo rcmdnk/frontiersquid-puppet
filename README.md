@@ -12,6 +12,13 @@ These puppet settings are for:
 The host name should be `*cvmfs-px*`, otherwise update
 **etc/puppetlabs/code/environments/production/manifests/site.pp** as you like.
 
+## Region
+
+The default region is **asia-northeast1**.
+`acl NET_LOCAL src `is set to `10.146.0.0/20`.
+Check [VCP Network Grid Test - Google Cloud Platform](https://console.cloud.google.com/networking/networks/list)
+and update this value as you like.
+
 ## Setup
 
 Install puppet and files by:
