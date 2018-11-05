@@ -1,0 +1,20 @@
+---
+classes:
+  - frontier::squid
+
+frontier::squid::customize_file: false
+frontier::squid::customize_template: "frontier/customize.sh.erb"
+frontier::squid::cache_dir: "/var/cache/squid"
+frontier::squid::install_resource: false
+frontier::squid::customize_params: {}
+frontier::squid::customize_lines: [
+  'setoption("acl NET_LOCAL src", "10.146.0.0/20")',
+  'setoption("cache_mem", "24576 MB")',
+  'setoptionparameter("cache_dir", 3, "491520")',
+  'setoption("collapsed_forwarding", "on")',
+  'setoption("max_filedescriptors", "8192")',
+  'setoption("maximum_object_size", "4096 MB")',
+  'setoption("logfile_rotate", "50")',
+]
+frontier::squid::max_access_log: "20G"
+frontier::squid::daemons: false

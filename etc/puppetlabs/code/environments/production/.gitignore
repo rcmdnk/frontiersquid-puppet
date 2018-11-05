@@ -1,0 +1,5 @@
+files/pool_password
+modules/
+.tmp/
+.librarian/
+Puppetfile.lock
