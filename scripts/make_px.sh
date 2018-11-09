@@ -43,5 +43,5 @@ image=${image:+--image $image}
 image_family=${image_family:+--image-family $image_family}
 image_project=${image_project:+--image-project $image_project}
 
-echo $ gcloud compute instances create $name $image $image_family $image_project --zone $zone --machine-type $machine_type --boot-disk-size $boot_disk_size --metadata-from-file startup-script=./startup-cvmfs-px.sh
-gcloud compute instances create $name $image $image_family $image_project --zone $zone --machine-type $machine_type --boot-disk-size $boot_disk_size --metadata-from-file startup-script=./startup-cvmfs-px.sh
+echo $ gcloud compute instances create $name $image $image_family $image_project --zone $zone --machine-type $machine_type --boot-disk-size $boot_disk_size --metadata-from-file startup-script=./startup-px.sh
+gcloud compute instances create $name $image $image_family $image_project --zone $zone --machine-type $machine_type --boot-disk-size $boot_disk_size --metadata-from-file startup-script=./startup-px.sh
