@@ -6,4 +6,4 @@ tar xzf  master.tar.gz
 cd frontiersquid-puppet-master
 ./setup.sh
 /opt/puppetlabs/bin/puppet apply /etc/puppetlabs/code/environments/production/manifests/site.pp
-} >& startup.log
+} >& ~/startup.log
