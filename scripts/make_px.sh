@@ -38,7 +38,7 @@ while getopts p:n:m:b:z:i:f:I:h OPT;do
 done
 
 num=$(printf "%02d" $num)
-name=${prefix}-px${num}-template
+name=${prefix}-px${num}
 image=${image:+--image $image}
 image_family=${image_family:+--image-family $image_family}
 image_project=${image_project:+--image-project $image_project}
