@@ -1,5 +1,5 @@
 # frontiersquid-puppet
-Puppet settings for Frontier Squid server, especially for CVMFS.
+Puppet settings for Frontier Squid server, especially for CVMFS, Condition Database.
 
 ## Environments
 
@@ -9,7 +9,7 @@ These puppet settings are for:
 
 ## HOSTNAME
 
-The host name should be `*cvmfs-px*`, otherwise update
+The host name should be `*cvmfs-px*` or `*conddb-px*`, otherwise update
 **etc/puppetlabs/code/environments/production/manifests/site.pp** as you like.
 
 ## Region

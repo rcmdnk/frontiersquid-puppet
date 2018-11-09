@@ -6,3 +6,4 @@ defaults:
 hierarchy:
   - name: "frontier"
     path: "roles/frontier_%{main_role}.yaml"
+    path: "common/frontier.yaml"
