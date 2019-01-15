@@ -9,7 +9,7 @@ These puppet settings are for:
 
 ## HOSTNAME
 
-The host name should be `*cvmfs-px*` or `*conddb-px*`, otherwise update
+The host name should be `*squid*`, `*cvmfs-px*` or `*conddb-px*`, otherwise update
 **etc/puppetlabs/code/environments/production/manifests/site.pp** as you like.
 
 ## Region

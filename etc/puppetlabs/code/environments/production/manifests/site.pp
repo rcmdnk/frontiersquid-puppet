@@ -1,5 +1,10 @@
 $main_role = ""
 
+node /^*squid*/ {
+  $main_role = "squid"
+  lookup('classes', Array[String], 'unique').include
+}
+
 node /^*cvmfs-px*/ {
   $main_role = "cvmfs"
   lookup('classes', Array[String], 'unique').include
