@@ -7,3 +7,6 @@ hierarchy:
   - name: "frontier"
     path: "roles/frontier_%{main_role}.yaml"
     path: "common/frontier.yaml"
+  - name: "google_fluentd"
+    path: "roles/google_fluentd_%{main_role}.yaml"
+    path: "common/google_fluentd.yaml"
