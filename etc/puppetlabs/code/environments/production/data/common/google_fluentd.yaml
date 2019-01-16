@@ -1,0 +1,9 @@
+---
+classes:
+  - google_fluentd
+
+google_fluentd::conf_files:
+  - "puppet:///files/fluentd/audit.conf"
+  - "puppet:///files/fluentd/boot.conf"
+  - "puppet:///files/fluentd/dmesg.conf"
+  - "puppet:///files/fluentd/secure.conf"

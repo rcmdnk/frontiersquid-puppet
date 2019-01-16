@@ -4,3 +4,6 @@
 forge "https://forgeapi.puppetlabs.com"
 
 mod 'desalvo-frontier', '0.1.3'
+mod 'mickaneda-google_fluentd',
+  :git => 'git://github.com/mickaneda/puppet-google_fluentd.git',
+  :ref => '0.0.1'
